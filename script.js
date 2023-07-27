@@ -27,9 +27,7 @@ let gerador = function(){
         
             cont ++;
         }
-    }
-
-
+    }else{
         while(cont < number_require_input){
             let busca_aleatoria = Math.floor(Math.random() * vetor.length)
             valores_aleatorios += vetor[busca_aleatoria];
@@ -38,6 +36,7 @@ let gerador = function(){
         }
 
         console.log(valores_aleatorios)
+    }
     
     mostrar_resultado.innerHTML = valores_aleatorios;
 }
